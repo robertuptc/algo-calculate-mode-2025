@@ -1,6 +1,7 @@
 def calculate_mode(list):
     items_dict = create_dict(list)
     answer = loop_dict(items_dict)
+    print(answer)
     return answer
 
 def create_dict(l):
@@ -25,5 +26,4 @@ def loop_dict(d):
         elif value == count:
             count = value
             answer.append(key)
-    print(answer)
     return answer
